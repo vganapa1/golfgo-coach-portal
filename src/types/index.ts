@@ -237,3 +237,29 @@ export interface CourseStrategy {
     };
   };
 }
+
+// ============================================================================
+// ROUND DEFENSE TYPES
+// ============================================================================
+
+export interface HoleAudioClip {
+  hole_number: number;
+  audio_url: string;
+  duration: number;
+  recorded_at: string;
+  notes?: string;
+}
+
+export interface PressConference {
+  audio_url: string;
+  duration: number;
+  recorded_at: string;
+  title?: string;
+}
+
+export interface RoundDefenseData {
+  player_id: string;
+  round_id: string;
+  hole_clips: HoleAudioClip[];
+  press_conference?: PressConference;
+}

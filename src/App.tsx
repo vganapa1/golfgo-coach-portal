@@ -6,6 +6,7 @@ import Tournaments from './pages/Tournaments';
 import CreateStrategy from './pages/CreateStrategy';
 import FAQ from './pages/FAQ';
 import Settings from './pages/Settings';
+import RoundDefense from './pages/RoundDefense';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<StrategyApproval />} />
             <Route path="/player/:playerId" element={<PlayerDetail />} />
+            <Route path="/round-defense" element={<RoundDefense />} />
             <Route path="/tournaments" element={<div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><Tournaments /></div>} />
             <Route path="/create-strategy/:playerId" element={<CreateStrategy />} />
             <Route path="/faq" element={<div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><FAQ /></div>} />
