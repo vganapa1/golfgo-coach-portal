@@ -1,0 +1,2622 @@
+{
+  "player_id": "player_005",
+  "player_name": "Alex Thompson",
+  "player_profile": {
+    "skill_level": "scratch",
+    "progression_type": "volatile",
+    "tendencies": {
+      "club_preference": "Driver",
+      "shot_pattern": "inconsistent",
+      "putting_tendency": "streaky"
+    }
+  },
+  "rounds": [
+    {
+      "round_id": "player_005_round_1",
+      "round_number": 1,
+      "course_name": "The Floridian",
+      "round_date": "2026-01-05T00:00:00",
+      "total_score": 69,
+      "scorecard": [
+        {
+          "hole": 1,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "score": 6
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "score": 2
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "score": 3
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "score": 4
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "score": 3
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "score": 4
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "score": 6
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "score": 3
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "score": 5
+        }
+      ],
+      "holes": [
+        {
+          "hole_number": 1,
+          "par": 4,
+          "yardage": 456,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Rough - right",
+              "shot_quality": "Acceptable"
+            },
+            {
+              "shot_number": 2,
+              "club": "8 Iron",
+              "distance": "159 yds",
+              "lie": "rough",
+              "result": "fringe",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "70 yds",
+              "lie": "fringe",
+              "result": "On the dance floor - 45ft short left",
+              "shot_quality": "Good contact"
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee"
+        },
+        {
+          "hole_number": 2,
+          "par": 5,
+          "yardage": 564,
+          "score": 6,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway bunker - left",
+              "shot_quality": "Acceptable"
+            },
+            {
+              "shot_number": 2,
+              "club": "3W",
+              "distance": "257 yds",
+              "lie": "bunker",
+              "result": "Fairway - right center",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "4 yds",
+              "lie": "fairway",
+              "result": "On the dance floor - 27ft short right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "27 ft",
+              "lie": "green",
+              "result": "Miss short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "5 ft",
+              "lie": "green",
+              "result": "Pulled left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 6,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nFound bunker, tough recovery needed\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 3,
+          "par": 3,
+          "yardage": 170,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "7 Iron",
+              "distance": "176 yds",
+              "lie": "tee",
+              "result": "fringe",
+              "shot_quality": "Pure contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Drained 2-footer for birdie"
+        },
+        {
+          "hole_number": 4,
+          "par": 4,
+          "yardage": 407,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "297 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": "Baseline shot"
+            },
+            {
+              "shot_number": 2,
+              "club": "Pitching Wedge",
+              "distance": "107 yds",
+              "lie": "fairway",
+              "result": "Green - 9ft short",
+              "shot_quality": "Caught it fat"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "9 ft",
+              "lie": "green",
+              "result": "Too aggressive",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Too aggressive",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Pitching Wedge to green\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 5,
+          "par": 4,
+          "yardage": 410,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "297 yds",
+              "lie": "tee",
+              "result": "Fairway - center",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Gap Wedge",
+              "distance": "96 yds",
+              "lie": "fairway",
+              "result": "On the dance floor - 51ft short",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "51 ft",
+              "lie": "green",
+              "result": "Right edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "9 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGood two-putt for par"
+        },
+        {
+          "hole_number": 6,
+          "par": 4,
+          "yardage": 337,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "292 yds",
+              "lie": "tee",
+              "result": "Fairway - right center",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "68 yds",
+              "lie": "fairway",
+              "result": "fringe",
+              "shot_quality": "Mishit"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "3 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nDrained 3-footer for birdie"
+        },
+        {
+          "hole_number": 7,
+          "par": 3,
+          "yardage": 238,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "3 Iron",
+              "distance": "209 yds",
+              "lie": "tee",
+              "result": "Green - 87ft left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "87 ft",
+              "lie": "green",
+              "result": "Pushed right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "11 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good two-putt for par"
+        },
+        {
+          "hole_number": 8,
+          "par": 5,
+          "yardage": 498,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 2,
+              "club": "5 Iron",
+              "distance": "179 yds",
+              "lie": "fairway",
+              "result": "Found the putting surface - 72ft long left",
+              "shot_quality": "Thin contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "72 ft",
+              "lie": "green",
+              "result": "Miss short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "13 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGood two-putt for par"
+        },
+        {
+          "hole_number": 9,
+          "par": 4,
+          "yardage": 372,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "296 yds",
+              "lie": "tee",
+              "result": "Fairway - right center",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "45 yds",
+              "lie": "fairway",
+              "result": "Found the putting surface - 93ft long left",
+              "shot_quality": "Flushed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "93 ft",
+              "lie": "green",
+              "result": "Miss short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "7 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 10,
+          "par": 4,
+          "yardage": 399,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Deep rough left",
+              "shot_quality": "Decent contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Pitching Wedge",
+              "distance": "84 yds",
+              "lie": "rough",
+              "result": "Found the putting surface - 63ft short",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "63 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nDrained 63-footer for birdie"
+        },
+        {
+          "hole_number": 11,
+          "par": 4,
+          "yardage": 378,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": "Decent contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "69 yds",
+              "lie": "fairway",
+              "result": "Green - 45ft long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "45 ft",
+              "lie": "green",
+              "result": "Left edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "6 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Lob Wedge to green"
+        },
+        {
+          "hole_number": 12,
+          "par": 3,
+          "yardage": 221,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "4 Iron",
+              "distance": "198 yds",
+              "lie": "tee",
+              "result": "On the dance floor - 69ft short right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "69 ft",
+              "lie": "green",
+              "result": "Pulled left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "8 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good two-putt for par"
+        },
+        {
+          "hole_number": 13,
+          "par": 5,
+          "yardage": 576,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway - left center",
+              "shot_quality": "Flushed"
+            },
+            {
+              "shot_number": 2,
+              "club": "3W",
+              "distance": "275 yds",
+              "lie": "fairway",
+              "result": "Found the putting surface - 21ft short right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "21 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGood two-putt for par"
+        },
+        {
+          "hole_number": 14,
+          "par": 4,
+          "yardage": 369,
+          "score": 6,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway bunker - left",
+              "shot_quality": "Baseline shot"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "50 yds",
+              "lie": "bunker",
+              "result": "On the dance floor - 57ft long right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "75 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Right edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 6,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nFound bunker, tough recovery needed\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 15,
+          "par": 4,
+          "yardage": 406,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Split the fairway",
+              "shot_quality": "Baseline shot"
+            },
+            {
+              "shot_number": 2,
+              "club": "Pitching Wedge",
+              "distance": "115 yds",
+              "lie": "fairway",
+              "result": "Greenside bunker",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "3 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Pitching Wedge to green"
+        },
+        {
+          "hole_number": 16,
+          "par": 3,
+          "yardage": 165,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "7 Iron",
+              "distance": "155 yds",
+              "lie": "tee",
+              "result": "Found the putting surface - 30ft long left",
+              "shot_quality": "Thin contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "30 ft",
+              "lie": "green",
+              "result": "Came up short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "3 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good two-putt for par"
+        },
+        {
+          "hole_number": 17,
+          "par": 4,
+          "yardage": 362,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "293 yds",
+              "lie": "tee",
+              "result": "Fairway - left center",
+              "shot_quality": "Flushed"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "70 yds",
+              "lie": "fairway",
+              "result": "First cut right",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "3 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nDrained 3-footer for birdie"
+        },
+        {
+          "hole_number": 18,
+          "par": 5,
+          "yardage": 568,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "293 yds",
+              "lie": "tee",
+              "result": "Fairway - right center",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "3W",
+              "distance": "258 yds",
+              "lie": "fairway",
+              "result": "Found the putting surface - 51ft left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "51 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "9 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nThree-putt, tough speed control"
+        }
+      ]
+    },
+    {
+      "round_id": "player_005_round_2",
+      "round_number": 2,
+      "course_name": "The Floridian",
+      "round_date": "2026-01-08T00:00:00",
+      "total_score": 71,
+      "scorecard": [
+        {
+          "hole": 1,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "score": 3
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "score": 2
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "score": 4
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "score": 3
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "score": 2
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "score": 6
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "score": 6
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "score": 2
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "score": 5
+        }
+      ],
+      "holes": [
+        {
+          "hole_number": 1,
+          "par": 4,
+          "yardage": 336,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway - center",
+              "shot_quality": "Caught it fat"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "71 yds",
+              "lie": "fairway",
+              "result": "Fairway bunker - right",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "3 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nDrained 3-footer for birdie"
+        },
+        {
+          "hole_number": 2,
+          "par": 5,
+          "yardage": 554,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Rough - right",
+              "shot_quality": "Decent contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "3 Iron",
+              "distance": "228 yds",
+              "lie": "rough",
+              "result": "Fairway - left center",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "68 yds",
+              "lie": "fairway",
+              "result": "Fairway bunker - right",
+              "shot_quality": "Perfect strike"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nGreat hole - eagle!"
+        },
+        {
+          "hole_number": 3,
+          "par": 3,
+          "yardage": 213,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "5 Iron",
+              "distance": "207 yds",
+              "lie": "tee",
+              "result": "Found the putting surface - 18ft left",
+              "shot_quality": "Pure contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "18 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Drained 18-footer for birdie"
+        },
+        {
+          "hole_number": 4,
+          "par": 4,
+          "yardage": 412,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "First cut left",
+              "shot_quality": "Perfect strike"
+            },
+            {
+              "shot_number": 2,
+              "club": "Gap Wedge",
+              "distance": "110 yds",
+              "lie": "rough",
+              "result": "Found the putting surface - 24ft left",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "24 ft",
+              "lie": "green",
+              "result": "Pushed right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nGood two-putt for par"
+        },
+        {
+          "hole_number": 5,
+          "par": 4,
+          "yardage": 441,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Deep rough left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "PW",
+              "distance": "127 yds",
+              "lie": "rough",
+              "result": "Green - 60ft short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "60 ft",
+              "lie": "green",
+              "result": "Miss left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "12 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nGood two-putt for par"
+        },
+        {
+          "hole_number": 6,
+          "par": 4,
+          "yardage": 397,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Gap Wedge",
+              "distance": "78 yds",
+              "lie": "fairway",
+              "result": "Found the putting surface - 75ft short right",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "75 ft",
+              "lie": "green",
+              "result": "Miss right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "12 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 7,
+          "par": 3,
+          "yardage": 216,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "5 Iron",
+              "distance": "192 yds",
+              "lie": "tee",
+              "result": "Green - 72ft long of pin",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "72 ft",
+              "lie": "green",
+              "result": "Pulled left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "13 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Three-putt, tough speed control"
+        },
+        {
+          "hole_number": 8,
+          "par": 5,
+          "yardage": 501,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "293 yds",
+              "lie": "tee",
+              "result": "Fairway - left center",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 2,
+              "club": "6 Iron",
+              "distance": "191 yds",
+              "lie": "fairway",
+              "result": "fringe",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "69 yds",
+              "lie": "fringe",
+              "result": "On the dance floor - 30ft short left",
+              "shot_quality": "Well executed"
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGreat hole - eagle!"
+        },
+        {
+          "hole_number": 9,
+          "par": 4,
+          "yardage": 385,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "296 yds",
+              "lie": "tee",
+              "result": "Rough - left",
+              "shot_quality": "Striped it"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "71 yds",
+              "lie": "rough",
+              "result": "Rough - left",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "3 yds",
+              "lie": "rough",
+              "result": "Green - 45ft right of pin",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "45 ft",
+              "lie": "green",
+              "result": "Came up short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "5 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nTwo putts for bogey"
+        },
+        {
+          "hole_number": 10,
+          "par": 4,
+          "yardage": 384,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "296 yds",
+              "lie": "tee",
+              "result": "Split the fairway",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Sand Wedge",
+              "distance": "77 yds",
+              "lie": "fairway",
+              "result": "Green - 33ft left",
+              "shot_quality": "Striped it"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "33 ft",
+              "lie": "green",
+              "result": "Left edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "4 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Sand Wedge to green"
+        },
+        {
+          "hole_number": 11,
+          "par": 4,
+          "yardage": 434,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Split the fairway",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Gap Wedge",
+              "distance": "111 yds",
+              "lie": "fairway",
+              "result": "First cut right",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "70 yds",
+              "lie": "rough",
+              "result": "Split the fairway",
+              "shot_quality": "Perfect strike"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": true,
+          "up_and_down_success": true,
+          "notes": "Good drive down the fairway\nGreat up-and-down to save par"
+        },
+        {
+          "hole_number": 12,
+          "par": 3,
+          "yardage": 216,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "4 Iron",
+              "distance": "218 yds",
+              "lie": "tee",
+              "result": "Greenside bunker",
+              "shot_quality": "Striped it"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Drained 2-footer for birdie"
+        },
+        {
+          "hole_number": 13,
+          "par": 5,
+          "yardage": 543,
+          "score": 6,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "292 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": "Caught it fat"
+            },
+            {
+              "shot_number": 2,
+              "club": "3W",
+              "distance": "219 yds",
+              "lie": "fairway",
+              "result": "On the dance floor - 96ft left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "96 ft",
+              "lie": "green",
+              "result": "Came up short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "15 ft",
+              "lie": "green",
+              "result": "Pulled left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Miss right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 6,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 14,
+          "par": 4,
+          "yardage": 454,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway - left center",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "PW",
+              "distance": "129 yds",
+              "lie": "fairway",
+              "result": "First cut right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "25 yds",
+              "lie": "rough",
+              "result": "On the dance floor - 15ft long right",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "15 ft",
+              "lie": "green",
+              "result": "Came up short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nTwo putts for bogey"
+        },
+        {
+          "hole_number": 15,
+          "par": 4,
+          "yardage": 390,
+          "score": 6,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "293 yds",
+              "lie": "tee",
+              "result": "Fairway - center",
+              "shot_quality": "Caught it fat"
+            },
+            {
+              "shot_number": 2,
+              "club": "Sand Wedge",
+              "distance": "68 yds",
+              "lie": "fairway",
+              "result": "Green - 87ft short left",
+              "shot_quality": "Flushed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "87 ft",
+              "lie": "green",
+              "result": "Left edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "17 ft",
+              "lie": "green",
+              "result": "Left edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Miss short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 6,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Sand Wedge to green\nThree-putt, tough speed control\nStruggled on this hole"
+        },
+        {
+          "hole_number": 16,
+          "par": 3,
+          "yardage": 171,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "6 Iron",
+              "distance": "158 yds",
+              "lie": "tee",
+              "result": "Green - 39ft short left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "39 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Drained 39-footer for birdie"
+        },
+        {
+          "hole_number": 17,
+          "par": 4,
+          "yardage": 400,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway - left center",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 2,
+              "club": "Sand Wedge",
+              "distance": "85 yds",
+              "lie": "fairway",
+              "result": "Green - 60ft right",
+              "shot_quality": "Striped it"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "60 ft",
+              "lie": "green",
+              "result": "Pushed right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "6 ft",
+              "lie": "green",
+              "result": "Miss short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Sand Wedge to green"
+        },
+        {
+          "hole_number": 18,
+          "par": 5,
+          "yardage": 581,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "292 yds",
+              "lie": "tee",
+              "result": "Fairway - center",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "3W",
+              "distance": "265 yds",
+              "lie": "fairway",
+              "result": "Green - 72ft short",
+              "shot_quality": "Acceptable"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "72 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "12 ft",
+              "lie": "green",
+              "result": "Ran it past",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with 3W to green\nThree-putt, tough speed control"
+        }
+      ]
+    },
+    {
+      "round_id": "player_005_round_3",
+      "round_number": 3,
+      "course_name": "The Floridian",
+      "round_date": "2026-01-11T00:00:00",
+      "total_score": 67,
+      "scorecard": [
+        {
+          "hole": 1,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "score": 5
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "score": 3
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "score": 2
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "score": 2
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "score": 6
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "score": 6
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "score": 3
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "score": 3
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "score": 3
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "score": 4
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "score": 3
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "score": 5
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "score": 2
+        }
+      ],
+      "holes": [
+        {
+          "hole_number": 1,
+          "par": 4,
+          "yardage": 383,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": "Thin contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "61 yds",
+              "lie": "fairway",
+              "result": "Green - 81ft short left",
+              "shot_quality": "Baseline shot"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "81 ft",
+              "lie": "green",
+              "result": "Ran it past",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "13 ft",
+              "lie": "green",
+              "result": "Pushed right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Lob Wedge to green"
+        },
+        {
+          "hole_number": 2,
+          "par": 5,
+          "yardage": 483,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway - center",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 2,
+              "club": "7 Iron",
+              "distance": "175 yds",
+              "lie": "fairway",
+              "result": "Green - 39ft left of pin",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "39 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Miss left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with 7 Iron to green\nThree-putt, tough speed control"
+        },
+        {
+          "hole_number": 3,
+          "par": 3,
+          "yardage": 180,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "6 Iron",
+              "distance": "166 yds",
+              "lie": "tee",
+              "result": "Green - 42ft short left of pin",
+              "shot_quality": "Thin contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "42 ft",
+              "lie": "green",
+              "result": "Too aggressive",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "7 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good two-putt for par"
+        },
+        {
+          "hole_number": 4,
+          "par": 4,
+          "yardage": 420,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway - right center",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 2,
+              "club": "Pitching Wedge",
+              "distance": "114 yds",
+              "lie": "fairway",
+              "result": "fringe",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "70 yds",
+              "lie": "fringe",
+              "result": "Found the putting surface - 42ft long left",
+              "shot_quality": "Caught it fat"
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway"
+        },
+        {
+          "hole_number": 5,
+          "par": 4,
+          "yardage": 426,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Split the fairway",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 2,
+              "club": "Pitching Wedge",
+              "distance": "114 yds",
+              "lie": "fairway",
+              "result": "Deep rough left",
+              "shot_quality": "Thin contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "70 yds",
+              "lie": "rough",
+              "result": "fringe",
+              "shot_quality": "Baseline shot"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": true,
+          "up_and_down_success": true,
+          "notes": "Good drive down the fairway\nGreat up-and-down to save par"
+        },
+        {
+          "hole_number": 6,
+          "par": 4,
+          "yardage": 368,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Split the fairway",
+              "shot_quality": "Flushed"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "70 yds",
+              "lie": "fairway",
+              "result": "Deep rough left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "-19 yds",
+              "lie": "rough",
+              "result": "On the dance floor - 66ft long left",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "66 ft",
+              "lie": "green",
+              "result": "Left edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nTwo putts for bogey"
+        },
+        {
+          "hole_number": 7,
+          "par": 3,
+          "yardage": 169,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "8 Iron",
+              "distance": "160 yds",
+              "lie": "tee",
+              "result": "Plugged lie in bunker",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "50 yds",
+              "lie": "bunker",
+              "result": "On the dance floor - 75ft right",
+              "shot_quality": "Mishit"
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Solid hole"
+        },
+        {
+          "hole_number": 8,
+          "par": 5,
+          "yardage": 533,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway - right center",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "5W",
+              "distance": "239 yds",
+              "lie": "fairway",
+              "result": "fringe",
+              "shot_quality": "Baseline shot"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGreat hole - albatross!"
+        },
+        {
+          "hole_number": 9,
+          "par": 4,
+          "yardage": 420,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Gap Wedge",
+              "distance": "113 yds",
+              "lie": "fairway",
+              "result": "On the dance floor - 39ft short left",
+              "shot_quality": "Pure contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "39 ft",
+              "lie": "green",
+              "result": "Ran it past",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGood two-putt for par"
+        },
+        {
+          "hole_number": 10,
+          "par": 4,
+          "yardage": 341,
+          "score": 6,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "293 yds",
+              "lie": "tee",
+              "result": "Greenside bunker",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "24 yds",
+              "lie": "bunker",
+              "result": "First cut left",
+              "shot_quality": "Pure contact"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "-9 yds",
+              "lie": "rough",
+              "result": "Green - 99ft long left",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "99 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "19 ft",
+              "lie": "green",
+              "result": "Left edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 6,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": true,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nFailed to convert the up-and-down\nFound bunker, tough recovery needed"
+        },
+        {
+          "hole_number": 11,
+          "par": 4,
+          "yardage": 440,
+          "score": 6,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway - center",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 2,
+              "club": "PW",
+              "distance": "131 yds",
+              "lie": "fairway",
+              "result": "Green - 45ft short left",
+              "shot_quality": "Mishit"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "45 ft",
+              "lie": "green",
+              "result": "Left it short",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "9 ft",
+              "lie": "green",
+              "result": "Miss right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Too aggressive",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 6,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with PW to green\nThree-putt, tough speed control\nStruggled on this hole"
+        },
+        {
+          "hole_number": 12,
+          "par": 3,
+          "yardage": 189,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "5 Iron",
+              "distance": "170 yds",
+              "lie": "tee",
+              "result": "Found the putting surface - 57ft long right",
+              "shot_quality": "Decent contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "57 ft",
+              "lie": "green",
+              "result": "Ran it past",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "6 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good two-putt for par"
+        },
+        {
+          "hole_number": 13,
+          "par": 5,
+          "yardage": 480,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Greenside bunker",
+              "shot_quality": "Solid strike"
+            },
+            {
+              "shot_number": 2,
+              "club": "8 Iron",
+              "distance": "159 yds",
+              "lie": "bunker",
+              "result": "Fairway - left center",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "69 yds",
+              "lie": "fairway",
+              "result": "fringe",
+              "shot_quality": "Decent contact"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Missed fairway off the tee\nFound bunker, tough recovery needed\nGreat hole - eagle!"
+        },
+        {
+          "hole_number": 14,
+          "par": 4,
+          "yardage": 449,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Fairway - right center",
+              "shot_quality": "Caught it fat"
+            },
+            {
+              "shot_number": 2,
+              "club": "PW",
+              "distance": "129 yds",
+              "lie": "fairway",
+              "result": "Rough - left",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Lob Wedge",
+              "distance": "69 yds",
+              "lie": "rough",
+              "result": "fringe",
+              "shot_quality": "Solid strike"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": true,
+          "up_and_down_success": true,
+          "notes": "Good drive down the fairway\nClutch chip and putt for up-and-down"
+        },
+        {
+          "hole_number": 15,
+          "par": 4,
+          "yardage": 357,
+          "score": 4,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "49 yds",
+              "lie": "fairway",
+              "result": "Green - 42ft short right of pin",
+              "shot_quality": "Heavy"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "42 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Lob Wedge to green\nGood two-putt for par"
+        },
+        {
+          "hole_number": 16,
+          "par": 3,
+          "yardage": 190,
+          "score": 3,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "6 Iron",
+              "distance": "186 yds",
+              "lie": "tee",
+              "result": "Green - 12ft left of pin",
+              "shot_quality": "Good contact"
+            },
+            {
+              "shot_number": 2,
+              "club": "Putter",
+              "distance": "12 ft",
+              "lie": "green",
+              "result": "Right edge",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "1 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good two-putt for par"
+        },
+        {
+          "hole_number": 17,
+          "par": 4,
+          "yardage": 354,
+          "score": 5,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "295 yds",
+              "lie": "tee",
+              "result": "Split the fairway",
+              "shot_quality": "Striped it"
+            },
+            {
+              "shot_number": 2,
+              "club": "Lob Wedge",
+              "distance": "43 yds",
+              "lie": "fairway",
+              "result": "Green - 48ft long right of pin",
+              "shot_quality": "Well executed"
+            },
+            {
+              "shot_number": 3,
+              "club": "Putter",
+              "distance": "48 ft",
+              "lie": "green",
+              "result": "Miss long",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 4,
+              "club": "Putter",
+              "distance": "3 ft",
+              "lie": "green",
+              "result": "Pushed right",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 5,
+              "club": "Putter",
+              "distance": "2 ft",
+              "lie": "green",
+              "result": "Made",
+              "shot_quality": null
+            }
+          ],
+          "hit_gir": true,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nSolid approach with Lob Wedge to green"
+        },
+        {
+          "hole_number": 18,
+          "par": 5,
+          "yardage": 574,
+          "score": 2,
+          "shots": [
+            {
+              "shot_number": 1,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "tee",
+              "result": "Fairway - left center",
+              "shot_quality": null
+            },
+            {
+              "shot_number": 2,
+              "club": "Driver",
+              "distance": "294 yds",
+              "lie": "fairway",
+              "result": "Rough - right",
+              "shot_quality": "Thin contact"
+            }
+          ],
+          "hit_gir": false,
+          "up_and_down_attempt": false,
+          "up_and_down_success": false,
+          "notes": "Good drive down the fairway\nGreat hole - albatross!"
+        }
+      ]
+    }
+  ]
+}
