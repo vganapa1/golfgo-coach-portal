@@ -109,7 +109,7 @@ export default function PlayerRoundDefense({ player }: PlayerRoundDefenseProps) 
       <ScoreCard round={selectedRound} />
 
       {/* Round Statistics */}
-      <RoundStats round={selectedRound} />
+      <RoundStats round={selectedRound} player={player} allRounds={sortedRounds} />
 
       {/* Hole Audio Clips */}
       <HoleAudioClips round={selectedRound} playerId={player.id} />

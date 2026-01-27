@@ -1,10 +1,19 @@
-import { Round } from '../../types';
+import { useState } from 'react';
+import { Round, Player } from '../../types';
+import { mapToClippDFormat } from '../../utils/clippDMapping';
+import ClippDCategorySection from '../clippd/ClippDCategorySection';
 
 interface RoundStatsProps {
   round: Round;
+  player: Player;
+  allRounds: Round[];
 }
 
-export default function RoundStats({ round }: RoundStatsProps) {
+export default function RoundStats({ round, player, allRounds }: RoundStatsProps) {
+  const [selectedClippDCategory, setSelectedClippDCategory] = useState<string | null>(null);
+  
+  // Get ClippD data
+  const clippDData = allRounds.length > 0 ? mapToClippDFormat(player, allRounds) : null;
   const { summary } = round;
   
   const formatPercentage = (value: number) => {
@@ -24,7 +33,35 @@ export default function RoundStats({ round }: RoundStatsProps) {
 
   return (
     <div className="bg-white rounded-apple shadow-apple border border-gray-100 p-6">
-      <h3 className="text-lg font-semibold text-black mb-4">Round Statistics</h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-lg font-semibold text-black">Round Statistics</h3>
+        <div className="flex items-center space-x-3">
+          <label className="text-sm font-semibold text-gray-900">ClippD Data:</label>
+          <select
+            value={selectedClippDCategory || ''}
+            onChange={(e) => setSelectedClippDCategory(e.target.value || null)}
+            className="px-3 py-1.5 bg-white border border-gray-300 rounded-apple text-sm font-medium focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+          >
+            <option value="">Select Category</option>
+            {clippDData?.categories.map((category, index) => (
+              <option key={index} value={category.name}>
+                {category.name}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      
+      {/* ClippD Category Display */}
+      {selectedClippDCategory && clippDData && (
+        <div className="mb-6">
+          {clippDData.categories
+            .filter(cat => cat.name === selectedClippDCategory)
+            .map((category, index) => (
+              <ClippDCategorySection key={index} category={category} />
+            ))}
+        </div>
+      )}
       
       {/* Main Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
