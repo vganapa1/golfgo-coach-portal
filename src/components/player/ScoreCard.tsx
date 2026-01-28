@@ -5,9 +5,10 @@ interface ScoreCardProps {
   round: Round;
   showComparison?: boolean;
   comparisonRound?: Round;
+  displayRoundNumber?: number; // Override displayed round number
 }
 
-export default function ScoreCard({ round, showComparison, comparisonRound }: ScoreCardProps) {
+export default function ScoreCard({ round, showComparison, comparisonRound, displayRoundNumber }: ScoreCardProps) {
   // CRITICAL: Ensure holes array exists and has 18 holes
   if (!round || !round.holes || round.holes.length !== 18) {
     return (
@@ -91,7 +92,7 @@ export default function ScoreCard({ round, showComparison, comparisonRound }: Sc
       <div className="flex justify-between items-start mb-5">
         <div>
           <h3 className="text-xl font-semibold text-black tracking-tight">
-            Round {round.round_number} Scorecard
+            Round {displayRoundNumber !== undefined ? displayRoundNumber : round.round_number} Scorecard
           </h3>
           {round.date && (
             <p className="text-sm text-gray-600 mt-2 font-light">

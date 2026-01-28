@@ -106,7 +106,7 @@ export default function PlayerRoundDefense({ player }: PlayerRoundDefenseProps) 
       </div>
 
       {/* Scorecard */}
-      <ScoreCard round={selectedRound} />
+      <ScoreCard round={selectedRound} displayRoundNumber={1} />
 
       {/* Round Statistics */}
       <RoundStats round={selectedRound} player={player} allRounds={sortedRounds} />
