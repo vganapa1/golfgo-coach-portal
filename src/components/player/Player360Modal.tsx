@@ -77,7 +77,7 @@ export default function Player360Modal({ player, rounds, isOpen, onClose }: Play
   const renderTabContent = () => {
     switch (activeTab) {
       case 'clippd':
-        return <ClippDTab player={player} rounds={rounds} />;
+        return <ClippDTab player={player} />;
       
       case 'performance':
         return (
@@ -232,7 +232,7 @@ export default function Player360Modal({ player, rounds, isOpen, onClose }: Play
         return <CourseView rounds={rounds} />;
       
       default:
-        return <ClippDTab player={player} rounds={rounds} />;
+        return <ClippDTab player={player} />;
     }
   };
 

@@ -18,7 +18,7 @@ interface Player360PanelProps {
 }
 
 export default function Player360Panel({ player, rounds }: Player360PanelProps) {
-  const [activeTab, setActiveTab] = useState('clippd');
+  const [activeTab, setActiveTab] = useState('performance');
   const [selectedRound, setSelectedRound] = useState<number | 'all'>('all');
   const { aggregateStats, progression } = usePlayerStats(rounds);
 
@@ -59,6 +59,8 @@ export default function Player360Panel({ player, rounds }: Player360PanelProps) 
     }
   }, [rounds]);
 
+  const [activeSystemTab, setActiveSystemTab] = useState<'golfgo' | 'clippd'>('golfgo');
+
   const sortedRounds = [...rounds].sort((a, b) => a.round_number - b.round_number);
   const availableRounds = sortedRounds.map(r => r.round_number);
   
@@ -70,7 +72,7 @@ export default function Player360Panel({ player, rounds }: Player360PanelProps) 
   const renderTabContent = () => {
     switch (activeTab) {
       case 'clippd':
-        return <ClippDTab player={player} rounds={rounds} />;
+        return <ClippDTab player={player} />;
       
       case 'performance':
         return (
@@ -189,18 +191,30 @@ export default function Player360Panel({ player, rounds }: Player360PanelProps) 
         return <CourseView rounds={rounds} />;
       
       default:
-        return <ClippDTab player={player} rounds={rounds} />;
+        return <ClippDTab player={player} />;
     }
   };
 
-  // Error boundary - if rounds is empty or invalid, show message
+  // If rounds is empty, only allow ClippD system tab
   if (!rounds || rounds.length === 0) {
     return (
-      <div className="h-full flex flex-col bg-white w-full p-6">
-        <div className="bg-gray-50 border border-gray-200 rounded-apple p-4">
-          <p className="text-gray-600 text-sm font-light">
-            No round data available for {player.name}. Please ensure round data is loaded.
+      <div className="h-full flex flex-col bg-white w-full">
+        <div className="bg-black border-b border-white flex-shrink-0">
+          <div className="flex">
+            <button
+              className="px-6 py-3 text-sm font-medium border-b-2 border-white text-white bg-gray-900"
+            >
+              <span className="underline decoration-wavy decoration-red-500">ClippD System</span>
+            </button>
+          </div>
+        </div>
+        <div className="bg-black border-b border-gray-900 px-6 py-4 flex-shrink-0">
+          <p className="text-sm text-white font-medium">
+            {player.name} • HCP: {player.handicap}
           </p>
+        </div>
+        <div className="flex-1 overflow-y-auto px-6 py-5">
+          <ClippDTab player={player} />
         </div>
       </div>
     );
@@ -208,51 +222,89 @@ export default function Player360Panel({ player, rounds }: Player360PanelProps) 
 
   return (
     <div className="h-full flex flex-col bg-white w-full">
+      {/* System Tabs */}
+      <div className="bg-black border-b border-white flex-shrink-0">
+        <div className="flex">
+          <button
+            onClick={() => {
+              setActiveSystemTab('golfgo');
+              setActiveTab('performance'); // Reset to performance when switching to Golf Go
+            }}
+            className={`
+              px-6 py-3 text-sm font-medium border-b-2 transition-colors
+              ${activeSystemTab === 'golfgo'
+                ? 'border-white text-white bg-gray-900'
+                : 'border-transparent text-gray-400 hover:text-white'
+              }
+            `}
+          >
+            Player Profile Powered by Golf Go
+          </button>
+          <button
+            onClick={() => setActiveSystemTab('clippd')}
+            className={`
+              px-6 py-3 text-sm font-medium border-b-2 transition-colors relative
+              ${activeSystemTab === 'clippd'
+                ? 'border-white text-white bg-gray-900'
+                : 'border-transparent text-gray-400 hover:text-white'
+              }
+            `}
+          >
+            <span className="underline decoration-wavy decoration-red-500">ClippD System</span>
+          </button>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="bg-black border-b border-gray-900 px-6 py-4 flex-shrink-0">
-        <h3 className="text-lg font-semibold text-white tracking-tight">Player360 Profile</h3>
-        <p className="text-sm text-gray-300 mt-1 font-light">
+        <p className="text-sm text-white font-medium">
           {player.name} • HCP: {player.handicap} • {rounds.length} Rounds
         </p>
       </div>
 
-      {/* Tab Navigation */}
-      <div className="bg-black border-b border-gray-900 flex-shrink-0">
-        <nav className="flex space-x-0 overflow-x-auto scrollbar-hide" aria-label="Tabs">
-          {[
-            { id: 'clippd', label: 'ClippD Data', icon: '📊' },
-            { id: 'performance', label: 'Performance', icon: '📈' },
-            { id: 'offTee', label: 'Off The Tee', icon: '🏌️' },
-            { id: 'approach', label: 'Approach', icon: '🎯' },
-            { id: 'shortGame', label: 'Around Green', icon: '⛳' },
-            { id: 'putting', label: 'Putting', icon: '🏌️‍♂️' },
-            { id: 'course', label: 'Course View', icon: '🗺️' },
-          ].map((tab) => {
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`
-                  flex items-center space-x-2 px-4 py-3 text-sm font-medium border-b-2 transition-colors whitespace-nowrap flex-shrink-0
-                  ${isActive
-                    ? 'border-white text-white bg-gray-900'
-                    : 'border-transparent text-gray-400 hover:text-white hover:border-gray-600 hover:bg-gray-900'
-                  }
-                `}
-              >
-                <span className="text-base">{tab.icon}</span>
-                <span>{tab.label}</span>
-              </button>
-            );
-          })}
-        </nav>
-      </div>
+      {/* Tab Navigation - Only show for Golf Go profile */}
+      {activeSystemTab === 'golfgo' && (
+        <div className="bg-black border-b border-gray-900 flex-shrink-0">
+          <nav className="flex space-x-0 overflow-x-auto scrollbar-hide" aria-label="Tabs">
+            {[
+              { id: 'performance', label: 'Performance', icon: '📈' },
+              { id: 'offTee', label: 'Off The Tee', icon: '🏌️' },
+              { id: 'approach', label: 'Approach', icon: '🎯' },
+              { id: 'shortGame', label: 'Around G', icon: '⛳' },
+              { id: 'putting', label: 'Putting', icon: '🏌️‍♂️' },
+              { id: 'course', label: 'Course View', icon: '🗺️' },
+            ].map((tab) => {
+              const isActive = activeTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`
+                    flex items-center space-x-2 px-4 py-3 text-sm font-medium border-b-2 transition-colors whitespace-nowrap flex-shrink-0
+                    ${isActive
+                      ? 'border-white text-white bg-gray-900'
+                      : 'border-transparent text-gray-400 hover:text-white hover:border-gray-600 hover:bg-gray-900'
+                    }
+                  `}
+                >
+                  <span className="text-base">{tab.icon}</span>
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+      )}
 
       {/* Content */}
       <div className="flex-1 overflow-y-auto px-6 py-5">
         {(() => {
           try {
+            // Show ClippD data when ClippD System tab is active
+            if (activeSystemTab === 'clippd') {
+              return <ClippDTab player={player} />;
+            }
+            // Otherwise show regular tab content
             return renderTabContent();
           } catch (error) {
             console.error('Error rendering tab content:', error);

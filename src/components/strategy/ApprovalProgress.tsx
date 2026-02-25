@@ -87,7 +87,7 @@ export default function ApprovalProgress({
         <div className="flex items-center space-x-4">
           <h3 className="text-xl font-semibold text-white tracking-tight">Approval Status</h3>
           {pendingCount > 0 && (
-            <span className="px-3 py-1 bg-gray-800 text-white rounded-full text-sm font-medium border border-gray-700">
+            <span className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm font-medium">
               {pendingCount} holes require approval
             </span>
           )}
@@ -98,7 +98,7 @@ export default function ApprovalProgress({
           )}
         </div>
         <button className="text-gray-400 hover:text-white transition-colors text-sm font-medium">
-          {isCollapsed ? '▼ Expand' : '▲ Collapse'}
+          {isCollapsed ? '▼ Expand' : '^ Collapse'}
         </button>
       </div>
 

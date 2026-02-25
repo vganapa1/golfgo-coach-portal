@@ -239,6 +239,124 @@ export interface CourseStrategy {
 }
 
 // ============================================================================
+// CLIPPD DATA TYPES
+// ============================================================================
+
+export interface ClippDHeatmapValues {
+  top_left: number;
+  top_center: number;
+  top_right: number;
+  middle_left: number;
+  middle_center: number;
+  middle_right: number;
+  bottom_left: number;
+  bottom_center: number;
+  bottom_right: number;
+}
+
+export interface ClippDPinLocationHeatmap {
+  distance_range: string;
+  values: ClippDHeatmapValues;
+}
+
+export interface ClippDPuttingProfile {
+  distance_range: string;
+  rounds_analyzed: number;
+  speed_control: string;
+  straight_putts: string;
+  l_to_r_putts: string;
+  r_to_l_putts: string;
+}
+
+export interface ClippDPlayerData {
+  player_id: string;
+  player_name: string;
+  rounds_analyzed: number;
+  last_updated: string;
+
+  off_the_tee: {
+    overall_shot_quality: number;
+    dna: { category: string; avg_shot_quality: number }[];
+  };
+
+  approach: {
+    overall: {
+      shot_quality: number;
+      strokes_gained: number;
+      gir_pct: number;
+      accuracy_pct: number;
+      avg_proximity: string;
+      tour_t25_avg_proximity: string;
+      miss_tendency: {
+        left_pct: number;
+        right_pct: number;
+        short_pct: number;
+        long_pct: number;
+      };
+    };
+    shot_quality_zones_top3: {
+      range_yards: string;
+      shot_quality: number;
+      avg_proximity: string;
+    }[];
+    avoid_zone: {
+      range_yards: string;
+      shot_quality: number;
+      avg_proximity: string;
+    };
+    pin_location_heatmaps: ClippDPinLocationHeatmap[];
+  };
+
+  around_the_green: {
+    player_quality: number;
+    tour_top_25: number;
+    importance_to_scoring_pct: number;
+    work_on: {
+      category: string;
+      importance_pct: number;
+      opportunity: string;
+      sq_trend: number;
+    };
+    breakdown: {
+      from_fairway: { up_and_down_pct: number; strokes_gained: number };
+      from_rough: { up_and_down_pct: number; strokes_gained: number };
+      from_sand: { up_and_down_pct: number; strokes_gained: number };
+    };
+  };
+
+  putting: {
+    overall: {
+      player_quality: number;
+      tour_top_25: number;
+      strokes_gained: number;
+      shot_quality: number;
+      importance_to_scoring_pct: number;
+      birdie_conversion_pct: number;
+      tour_t25_birdie_conversion_pct: number;
+      one_putt_pct: number;
+      three_putt_pct: number;
+      putts_per_round: number;
+      putts_per_gir: number;
+      avg_putts_made_distance: string;
+      total_putts: number;
+      one_putts: number;
+      two_putts: number;
+      three_putts: number;
+      putts_made_distance: string;
+      tour_t25_putts_made_distance: string;
+    };
+    work_on: {
+      focus_area: string;
+      importance_pct: number;
+      opportunity: string;
+      sq_trend: number;
+      trending: string;
+    };
+    profiles: ClippDPuttingProfile[];
+  };
+}
+
+// ============================================================================
 // ROUND DEFENSE TYPES
 // ============================================================================
 

@@ -5,12 +5,17 @@ interface RoundDefenseState {
   // Map of player_id -> round_id -> RoundDefenseData
   defenseData: Record<string, Record<string, RoundDefenseData>>;
   
+  // Map of player_id -> round_id -> hole_number -> score (for edited scores)
+  editedScores: Record<string, Record<string, Record<number, number>>>;
+  
   // Actions
   addHoleClip: (playerId: string, roundId: string, clip: HoleAudioClip) => void;
   removeHoleClip: (playerId: string, roundId: string, holeNumber: number) => void;
   setPressConference: (playerId: string, roundId: string, conference: PressConference) => void;
   removePressConference: (playerId: string, roundId: string) => void;
   getDefenseData: (playerId: string, roundId: string) => RoundDefenseData | null;
+  setHoleScore: (playerId: string, roundId: string, holeNumber: number, score: number) => void;
+  getHoleScore: (playerId: string, roundId: string, holeNumber: number) => number | null;
   clearAll: () => void;
 }
 
@@ -23,6 +28,7 @@ const createEmptyDefenseData = (playerId: string, roundId: string): RoundDefense
 
 export const useRoundDefenseStore = create<RoundDefenseState>((set, get) => ({
   defenseData: {},
+  editedScores: {},
 
   addHoleClip: (playerId: string, roundId: string, clip: HoleAudioClip) => {
     set((state) => {
@@ -132,6 +138,31 @@ export const useRoundDefenseStore = create<RoundDefenseState>((set, get) => ({
     return state.defenseData[playerId]?.[roundId] || null;
   },
 
+  setHoleScore: (playerId: string, roundId: string, holeNumber: number, score: number) => {
+    set((state) => {
+      const playerScores = state.editedScores[playerId] || {};
+      const roundScores = playerScores[roundId] || {};
+      
+      return {
+        editedScores: {
+          ...state.editedScores,
+          [playerId]: {
+            ...playerScores,
+            [roundId]: {
+              ...roundScores,
+              [holeNumber]: score,
+            },
+          },
+        },
+      };
+    });
+  },
+
+  getHoleScore: (playerId: string, roundId: string, holeNumber: number) => {
+    const state = get();
+    return state.editedScores[playerId]?.[roundId]?.[holeNumber] ?? null;
+  },
+
   clearAll: () => {
     // Revoke all URLs before clearing
     const state = get();
@@ -144,6 +175,6 @@ export const useRoundDefenseStore = create<RoundDefenseState>((set, get) => ({
       });
     });
     
-    set({ defenseData: {} });
+    set({ defenseData: {}, editedScores: {} });
   },
 }));

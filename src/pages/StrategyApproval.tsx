@@ -187,12 +187,30 @@ export default function StrategyApproval() {
     <div className="h-full flex flex-col">
       {/* Header */}
       <div className="flex-shrink-0 px-6 lg:px-8 xl:px-12 py-10 bg-black border-b border-gray-900">
-        <h1 className="text-4xl font-semibold text-white tracking-tight">
-          Coach Recommendations
-        </h1>
-        <p className="mt-3 text-base text-gray-300 font-light">
-          Select a player below to generate personalized course management strategies based on their practice round data
-        </p>
+        <div className="flex items-start justify-between">
+          <div className="flex-1">
+            <h1 className="text-4xl font-semibold text-white tracking-tight">
+              Coach Review and Recommendation System
+            </h1>
+            <p className="mt-3 text-base text-gray-300 font-light">
+              Select a player below to generate personalized course management strategies based on their practice round data
+            </p>
+          </div>
+          <div className="flex flex-col items-end space-y-2">
+            <p className="text-sm font-medium text-red-500">Logged in as Coach Ryan</p>
+            <div className="flex items-center space-x-3">
+              <span className="text-red-500 italic font-serif text-lg" style={{ fontStyle: 'italic', fontFamily: 'serif' }}>
+                floridian.
+              </span>
+              <span className="text-sm font-medium text-red-500">|</span>
+              <img 
+                src="/image 5.png" 
+                alt="GolfGo" 
+                className="h-6 w-auto"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Main Content Area */}

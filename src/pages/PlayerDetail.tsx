@@ -85,14 +85,23 @@ export default function PlayerDetail() {
     );
   }
 
-  if (rounds.length === 0) {
+  if (rounds.length === 0 && activeTab !== 'clippd') {
     return (
-      <div className="text-center py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">No Round Data</h2>
-        <p className="text-gray-600 mb-4">No practice rounds found for {player.name}</p>
-        <Link to="/" className="text-golf-green-600 hover:text-golf-green-700">
-          ← Back to Strategy Generator
-        </Link>
+      <div className="space-y-6 w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8 bg-white">
+        <div>
+          <Link to="/" className="text-black hover:text-gray-600 text-sm mb-3 inline-block font-medium">
+            ← Back to Strategy Generator
+          </Link>
+          <h1 className="text-4xl font-semibold text-black tracking-tight">Coach Recommendations</h1>
+          <div className="mt-3 text-sm text-gray-500 font-light">
+            {player.name} • Handicap: {player.handicap}
+          </div>
+        </div>
+        <TabNavigation playerId={playerId!} activeTab={activeTab} />
+        <div className="text-center py-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">No Round Data</h2>
+          <p className="text-gray-600 mb-4">No practice rounds found for {player.name}. Switch to the ClippD Data tab to view imported performance data.</p>
+        </div>
       </div>
     );
   }
@@ -108,7 +117,7 @@ export default function PlayerDetail() {
   const renderTabContent = () => {
     switch (activeTab) {
       case 'clippd':
-        return <ClippDTab player={player} rounds={rounds} />;
+        return <ClippDTab player={player} />;
       
       case 'performance':
         return (
@@ -263,7 +272,7 @@ export default function PlayerDetail() {
         return <CourseView rounds={rounds} />;
       
       default:
-        return <ClippDTab player={player} rounds={rounds} />;
+        return <ClippDTab player={player} />;
     }
   };
 
