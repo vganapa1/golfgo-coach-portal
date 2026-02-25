@@ -1,7 +1,30 @@
 {
-  "name": "Practice Course",
+  "name": "Country Club of Ocala",
+  "location": "Ocala, FL",
   "holes": 18,
   "par": 72,
-  "rating": 73.5,
-  "slope": 135
+  "yardage": 6920,
+  "rating": 74.1,
+  "slope": 140,
+  "tees": "Q-School - Black",
+  "scorecard": [
+    { "hole": 1,  "par": 5, "yardage": 538, "handicap": 7 },
+    { "hole": 2,  "par": 4, "yardage": 385, "handicap": 13 },
+    { "hole": 3,  "par": 4, "yardage": 393, "handicap": 9 },
+    { "hole": 4,  "par": 3, "yardage": 189, "handicap": 11 },
+    { "hole": 5,  "par": 5, "yardage": 514, "handicap": 15 },
+    { "hole": 6,  "par": 4, "yardage": 390, "handicap": 3 },
+    { "hole": 7,  "par": 4, "yardage": 357, "handicap": 5 },
+    { "hole": 8,  "par": 3, "yardage": 154, "handicap": 17 },
+    { "hole": 9,  "par": 4, "yardage": 455, "handicap": 1 },
+    { "hole": 10, "par": 5, "yardage": 561, "handicap": 14 },
+    { "hole": 11, "par": 3, "yardage": 183, "handicap": 18 },
+    { "hole": 12, "par": 4, "yardage": 408, "handicap": 4 },
+    { "hole": 13, "par": 4, "yardage": 372, "handicap": 16 },
+    { "hole": 14, "par": 4, "yardage": 397, "handicap": 12 },
+    { "hole": 15, "par": 4, "yardage": 437, "handicap": 6 },
+    { "hole": 16, "par": 3, "yardage": 201, "handicap": 10 },
+    { "hole": 17, "par": 4, "yardage": 438, "handicap": 2 },
+    { "hole": 18, "par": 5, "yardage": 548, "handicap": 8 }
+  ]
 }
