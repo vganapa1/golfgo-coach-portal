@@ -122,7 +122,7 @@ export default function CreateStrategy() {
                 Create Custom Strategy
               </h1>
               <p className="text-gray-300 font-light mt-2">
-                {player.name} • Okeeheelee February Classic • February 16, 2026
+                {player.name} • PGA Tour Americas Q-School • Country Club of Ocala • March 17-20, 2026
               </p>
             </div>
             <button
@@ -307,54 +307,55 @@ export default function CreateStrategy() {
             <h3 className="text-xl font-semibold text-black tracking-tight mb-4">Course Layout & Images</h3>
             
             <div className="bg-gray-50 rounded-apple p-6 border border-gray-200">
-              <h4 className="text-lg font-semibold text-black mb-4">Okeeheelee Golf Course</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a
-                  href="https://www.minorleaguegolf.com/scorecardview.asp?record_ID=132"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-white rounded-apple p-6 border border-gray-200 hover:shadow-apple transition-all"
-                >
-                  <div className="text-center">
-                    <div className="text-4xl mb-3">📊</div>
-                    <h5 className="font-semibold text-black mb-2">Official Scorecard</h5>
-                    <p className="text-sm text-gray-600 font-light">View detailed hole-by-hole scorecard</p>
-                  </div>
-                </a>
-                
-                <a
-                  href="https://www.pbcokeeheeleegolf.com/golf-course/2016-08-29-17-45-26#prettyPhoto"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-white rounded-apple p-6 border border-gray-200 hover:shadow-apple transition-all"
-                >
-                  <div className="text-center">
-                    <div className="text-4xl mb-3">🗺️</div>
-                    <h5 className="font-semibold text-black mb-2">Course Layout Gallery</h5>
-                    <p className="text-sm text-gray-600 font-light">View hole-by-hole course images</p>
-                  </div>
-                </a>
-              </div>
+              <h4 className="text-lg font-semibold text-black mb-4">Country Club of Ocala</h4>
+              <a
+                href="https://pgataqs.bluegolf.com/bluegolf/pgataqs26/event/pgataqs263/course/ccocala/detailedscorecard.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white rounded-apple p-6 border border-gray-200 hover:shadow-apple transition-all max-w-md"
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-3">📊</div>
+                  <h5 className="font-semibold text-black mb-2">Official Scorecard</h5>
+                  <p className="text-sm text-gray-600 font-light">View detailed hole-by-hole scorecard on BlueGolf</p>
+                </div>
+              </a>
             </div>
 
             <div className="bg-gray-50 rounded-apple p-6 border border-gray-200">
               <h4 className="text-lg font-semibold text-black mb-3">Course Information</h4>
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
                 <div>
                   <p className="text-gray-600 font-light">Course:</p>
-                  <p className="font-semibold text-black">Okeeheelee Golf Course</p>
+                  <p className="font-semibold text-black">Country Club of Ocala</p>
+                </div>
+                <div>
+                  <p className="text-gray-600 font-light">Location:</p>
+                  <p className="font-semibold text-black">Ocala, FL</p>
                 </div>
                 <div>
                   <p className="text-gray-600 font-light">Par:</p>
-                  <p className="font-semibold text-black">70</p>
+                  <p className="font-semibold text-black">72</p>
                 </div>
                 <div>
                   <p className="text-gray-600 font-light">Yardage:</p>
-                  <p className="font-semibold text-black">6,713 yards</p>
+                  <p className="font-semibold text-black">6,920 yards</p>
                 </div>
                 <div>
-                  <p className="text-gray-600 font-light">Tournament Date:</p>
-                  <p className="font-semibold text-black">February 16, 2026</p>
+                  <p className="text-gray-600 font-light">Rating / Slope:</p>
+                  <p className="font-semibold text-black">74.1 / 140</p>
+                </div>
+                <div>
+                  <p className="text-gray-600 font-light">Tees:</p>
+                  <p className="font-semibold text-black">Q-School — Black</p>
+                </div>
+                <div>
+                  <p className="text-gray-600 font-light">Tournament:</p>
+                  <p className="font-semibold text-black">PGA Tour Americas Q-School</p>
+                </div>
+                <div>
+                  <p className="text-gray-600 font-light">Dates:</p>
+                  <p className="font-semibold text-black">March 17-20, 2026</p>
                 </div>
               </div>
             </div>
