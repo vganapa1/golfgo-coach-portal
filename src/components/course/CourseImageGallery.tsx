@@ -1,144 +1,138 @@
 import { useState } from 'react';
+import courseData from '../../data/course.json';
 
-interface HoleImage {
+interface HoleInfo {
   hole: number;
-  label: string;
-  path: string;
+  par: number;
+  yardage: number;
+  handicap: number;
+  layoutPath: string;
+  greenPath?: string;
 }
 
-const HOLE_IMAGES: HoleImage[] = [
-  { hole: 1,  label: 'Hole 1',  path: '/course-images/hole-1.pdf' },
-  { hole: 2,  label: 'Hole 2',  path: '/course-images/hole-2.pdf' },
-  { hole: 3,  label: 'Hole 3',  path: '/course-images/hole-3.pdf' },
-  { hole: 4,  label: 'Hole 4',  path: '/course-images/hole-4.pdf' },
-  { hole: 4,  label: 'Hole 4 Green', path: '/course-images/hole-4-green.pdf' },
-  { hole: 5,  label: 'Hole 5',  path: '/course-images/hole-5.pdf' },
-  { hole: 6,  label: 'Hole 6',  path: '/course-images/hole-6.pdf' },
-  { hole: 7,  label: 'Hole 7',  path: '/course-images/hole-7.pdf' },
-  { hole: 8,  label: 'Hole 8',  path: '/course-images/hole-8.pdf' },
-  { hole: 8,  label: 'Hole 8 Green', path: '/course-images/hole-8-green.pdf' },
-  { hole: 9,  label: 'Hole 9',  path: '/course-images/hole-9.pdf' },
-  { hole: 10, label: 'Hole 10', path: '/course-images/hole-10.pdf' },
-  { hole: 11, label: 'Hole 11', path: '/course-images/hole-11.pdf' },
-  { hole: 12, label: 'Hole 12', path: '/course-images/hole-12.pdf' },
-  { hole: 13, label: 'Hole 13', path: '/course-images/hole-13.pdf' },
-  { hole: 14, label: 'Hole 14', path: '/course-images/hole-14.pdf' },
-  { hole: 15, label: 'Hole 15', path: '/course-images/hole-15.pdf' },
-  { hole: 16, label: 'Hole 16', path: '/course-images/hole-16.pdf' },
-  { hole: 16, label: 'Hole 16 Green', path: '/course-images/hole-16-green.pdf' },
-  { hole: 17, label: 'Hole 17', path: '/course-images/hole-17.pdf' },
-  { hole: 18, label: 'Hole 18', path: '/course-images/hole-18.pdf' },
-];
+const HOLES: HoleInfo[] = courseData.scorecard.map((h) => ({
+  hole: h.hole,
+  par: h.par,
+  yardage: h.yardage,
+  handicap: h.handicap,
+  layoutPath: `/course-images/hole-${h.hole}.pdf`,
+  greenPath: [4, 8, 16].includes(h.hole)
+    ? `/course-images/hole-${h.hole}-green.pdf`
+    : undefined,
+}));
 
 export default function CourseImageGallery() {
-  const [selectedImage, setSelectedImage] = useState<HoleImage | null>(null);
-  const [selectedHole, setSelectedHole] = useState<number | 'all'>('all');
+  const [selectedHole, setSelectedHole] = useState(1);
+  const [viewMode, setViewMode] = useState<'layout' | 'green'>('layout');
 
-  const filtered = selectedHole === 'all'
-    ? HOLE_IMAGES
-    : HOLE_IMAGES.filter(img => img.hole === selectedHole);
+  const hole = HOLES.find((h) => h.hole === selectedHole)!;
+  const hasGreen = !!hole.greenPath;
+  const pdfSrc = viewMode === 'green' && hasGreen ? hole.greenPath! : hole.layoutPath;
+
+  const goTo = (n: number) => {
+    setSelectedHole(n);
+    setViewMode('layout');
+  };
 
   return (
-    <>
-      {/* Hole filter */}
-      <div className="flex items-center gap-3 mb-4">
-        <label className="text-sm font-medium text-gray-700">Filter:</label>
-        <select
-          value={selectedHole}
-          onChange={(e) => setSelectedHole(e.target.value === 'all' ? 'all' : parseInt(e.target.value))}
-          className="px-3 py-1.5 border border-gray-300 rounded-apple text-sm focus:ring-2 focus:ring-black focus:border-black"
+    <div className="space-y-4">
+      {/* Hole selector strip */}
+      <div className="flex items-center gap-1">
+        <button
+          onClick={() => selectedHole > 1 && goTo(selectedHole - 1)}
+          disabled={selectedHole === 1}
+          className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition disabled:opacity-25 disabled:cursor-not-allowed"
+          aria-label="Previous hole"
         >
-          <option value="all">All Holes</option>
-          {Array.from({ length: 18 }, (_, i) => i + 1).map(h => (
-            <option key={h} value={h}>Hole {h}</option>
-          ))}
-        </select>
-      </div>
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+        </button>
 
-      {/* Thumbnail grid */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
-        {filtered.map((img) => (
-          <button
-            key={img.path}
-            onClick={() => setSelectedImage(img)}
-            className="bg-white border border-gray-200 rounded-lg p-2 hover:shadow-md hover:border-gray-400 transition-all text-center"
-          >
-            <div className="w-full aspect-[3/4] bg-gray-100 rounded flex items-center justify-center text-2xl text-gray-400 mb-1">
-              📄
-            </div>
-            <span className="text-xs font-medium text-gray-700 leading-tight block">{img.label}</span>
-          </button>
-        ))}
-      </div>
-
-      {/* Lightbox / PDF viewer modal */}
-      {selectedImage && (
-        <>
-          <div
-            className="fixed inset-0 bg-black bg-opacity-60 z-50"
-            onClick={() => setSelectedImage(null)}
-          />
-          <div className="fixed inset-4 md:inset-8 lg:inset-12 z-50 flex flex-col bg-white rounded-2xl shadow-2xl overflow-hidden">
-            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 flex-shrink-0">
-              <div className="flex items-center gap-3">
-                <h3 className="text-lg font-semibold text-black">{selectedImage.label}</h3>
-                <span className="text-sm text-gray-500">Country Club of Ocala</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <a
-                  href={selectedImage.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm font-medium border border-gray-300 rounded-apple hover:bg-gray-50 transition-colors"
-                >
-                  Open in New Tab
-                </a>
-                <button
-                  onClick={() => setSelectedImage(null)}
-                  className="p-2 text-gray-400 hover:text-gray-600 transition"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="flex-1 overflow-hidden">
-              <iframe
-                src={selectedImage.path}
-                className="w-full h-full border-0"
-                title={selectedImage.label}
-              />
-            </div>
-            {/* Prev / Next navigation */}
-            <div className="flex items-center justify-between px-6 py-3 border-t border-gray-200 flex-shrink-0">
+        <div className="flex-1 overflow-x-auto scrollbar-hide">
+          <div className="flex gap-1 min-w-max px-1">
+            {HOLES.map((h) => (
               <button
-                onClick={() => {
-                  const idx = filtered.findIndex(i => i.path === selectedImage.path);
-                  if (idx > 0) setSelectedImage(filtered[idx - 1]);
-                }}
-                disabled={filtered.findIndex(i => i.path === selectedImage.path) === 0}
-                className="px-4 py-2 text-sm font-medium rounded-apple border border-gray-300 hover:bg-gray-50 transition disabled:opacity-30 disabled:cursor-not-allowed"
+                key={h.hole}
+                onClick={() => goTo(h.hole)}
+                className={`
+                  flex flex-col items-center justify-center w-12 py-1.5 rounded-lg text-xs font-medium transition-all
+                  ${h.hole === selectedHole
+                    ? 'bg-black text-white shadow-md'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }
+                `}
               >
-                Previous
+                <span className="font-bold text-sm">{h.hole}</span>
+                <span className={`text-[10px] ${h.hole === selectedHole ? 'text-gray-300' : 'text-gray-400'}`}>
+                  P{h.par}
+                </span>
               </button>
-              <span className="text-xs text-gray-500">
-                {filtered.findIndex(i => i.path === selectedImage.path) + 1} of {filtered.length}
-              </span>
-              <button
-                onClick={() => {
-                  const idx = filtered.findIndex(i => i.path === selectedImage.path);
-                  if (idx < filtered.length - 1) setSelectedImage(filtered[idx + 1]);
-                }}
-                disabled={filtered.findIndex(i => i.path === selectedImage.path) === filtered.length - 1}
-                className="px-4 py-2 text-sm font-medium rounded-apple border border-gray-300 hover:bg-gray-50 transition disabled:opacity-30 disabled:cursor-not-allowed"
-              >
-                Next
-              </button>
-            </div>
+            ))}
           </div>
-        </>
-      )}
-    </>
+        </div>
+
+        <button
+          onClick={() => selectedHole < 18 && goTo(selectedHole + 1)}
+          disabled={selectedHole === 18}
+          className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition disabled:opacity-25 disabled:cursor-not-allowed"
+          aria-label="Next hole"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+        </button>
+      </div>
+
+      {/* Hole header with stats */}
+      <div className="flex flex-wrap items-center justify-between gap-3 bg-gray-50 rounded-xl px-5 py-3 border border-gray-200">
+        <div className="flex items-baseline gap-3">
+          <h4 className="text-xl font-bold text-black">Hole {hole.hole}</h4>
+          <div className="flex items-center gap-3 text-sm text-gray-600">
+            <span>Par <strong className="text-black">{hole.par}</strong></span>
+            <span className="text-gray-300">|</span>
+            <span><strong className="text-black">{hole.yardage}</strong> yds</span>
+            <span className="text-gray-300">|</span>
+            <span>HCP <strong className="text-black">{hole.handicap}</strong></span>
+          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          {hasGreen && (
+            <div className="flex bg-gray-200 rounded-lg p-0.5">
+              <button
+                onClick={() => setViewMode('layout')}
+                className={`px-3 py-1 text-xs font-medium rounded-md transition ${
+                  viewMode === 'layout' ? 'bg-white text-black shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                Layout
+              </button>
+              <button
+                onClick={() => setViewMode('green')}
+                className={`px-3 py-1 text-xs font-medium rounded-md transition ${
+                  viewMode === 'green' ? 'bg-white text-black shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                Green Detail
+              </button>
+            </div>
+          )}
+          <a
+            href={pdfSrc}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-1.5 text-xs font-medium border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            Open in New Tab
+          </a>
+        </div>
+      </div>
+
+      {/* Inline PDF viewer */}
+      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden" style={{ height: '70vh', minHeight: 500 }}>
+        <iframe
+          key={pdfSrc}
+          src={pdfSrc}
+          className="w-full h-full border-0"
+          title={`Hole ${hole.hole} ${viewMode === 'green' ? 'Green Detail' : 'Layout'}`}
+        />
+      </div>
+    </div>
   );
 }

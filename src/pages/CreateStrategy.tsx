@@ -305,70 +305,33 @@ export default function CreateStrategy() {
 
         {activeTab === 'course' && (
           <div className="space-y-6 pb-8">
-            <h3 className="text-xl font-semibold text-black tracking-tight mb-4">Course Layout & Images</h3>
-            
+            {/* Course header with info + scorecard link */}
             <div className="bg-gray-50 rounded-apple p-6 border border-gray-200">
-              <h4 className="text-lg font-semibold text-black mb-4">Country Club of Ocala</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-black tracking-tight">Country Club of Ocala</h3>
+                  <p className="text-sm text-gray-500 mt-1">Ocala, FL &middot; Par 72 &middot; 6,920 yds &middot; Rating 74.1 / Slope 140 &middot; Q-School Black</p>
+                </div>
                 <a
                   href="https://pgataqs.bluegolf.com/bluegolf/pgataqs26/event/pgataqs263/course/ccocala/detailedscorecard.htm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-white rounded-apple p-6 border border-gray-200 hover:shadow-apple transition-all"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-black text-white rounded-apple text-sm font-medium hover:bg-gray-800 transition-colors flex-shrink-0"
                 >
-                  <div className="text-center">
-                    <div className="text-4xl mb-3">📊</div>
-                    <h5 className="font-semibold text-black mb-2">Official Scorecard</h5>
-                    <p className="text-sm text-gray-600 font-light">View detailed hole-by-hole scorecard on BlueGolf</p>
-                  </div>
+                  Official Scorecard
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                 </a>
-                <div className="bg-white rounded-apple p-6 border border-gray-200">
-                  <div className="text-center mb-4">
-                    <div className="text-4xl mb-3">🗺️</div>
-                    <h5 className="font-semibold text-black mb-2">Course Images</h5>
-                    <p className="text-sm text-gray-600 font-light">Browse hole-by-hole course layouts</p>
-                  </div>
-                  <CourseImageGallery />
-                </div>
+              </div>
+              <div className="grid grid-cols-4 md:grid-cols-8 gap-2 text-xs text-center">
+                <div className="text-gray-500 font-medium">Tournament</div>
+                <div className="col-span-3 md:col-span-3 text-left font-semibold text-black">PGA Tour Americas Q-School &middot; March 17-20, 2026</div>
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-apple p-6 border border-gray-200">
-              <h4 className="text-lg font-semibold text-black mb-3">Course Information</h4>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
-                <div>
-                  <p className="text-gray-600 font-light">Course:</p>
-                  <p className="font-semibold text-black">Country Club of Ocala</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Location:</p>
-                  <p className="font-semibold text-black">Ocala, FL</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Par:</p>
-                  <p className="font-semibold text-black">72</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Yardage:</p>
-                  <p className="font-semibold text-black">6,920 yards</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Rating / Slope:</p>
-                  <p className="font-semibold text-black">74.1 / 140</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Tees:</p>
-                  <p className="font-semibold text-black">Q-School — Black</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Tournament:</p>
-                  <p className="font-semibold text-black">PGA Tour Americas Q-School</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 font-light">Dates:</p>
-                  <p className="font-semibold text-black">March 17-20, 2026</p>
-                </div>
-              </div>
+            {/* Hole-by-hole course guide */}
+            <div className="bg-white rounded-apple border border-gray-200 p-6">
+              <h4 className="text-lg font-semibold text-black mb-4">Hole-by-Hole Course Guide</h4>
+              <CourseImageGallery />
             </div>
           </div>
         )}
