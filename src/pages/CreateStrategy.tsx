@@ -4,6 +4,7 @@ import { usePlayerData } from '../hooks/usePlayerData';
 import { useRoundData } from '../hooks/useRoundData';
 import { CourseStrategy, HoleStrategy } from '../types';
 import Player360Panel from '../components/player/Player360Panel';
+import CourseImageGallery from '../components/course/CourseImageGallery';
 
 export default function CreateStrategy() {
   const { playerId } = useParams<{ playerId: string }>();
@@ -308,18 +309,28 @@ export default function CreateStrategy() {
             
             <div className="bg-gray-50 rounded-apple p-6 border border-gray-200">
               <h4 className="text-lg font-semibold text-black mb-4">Country Club of Ocala</h4>
-              <a
-                href="https://pgataqs.bluegolf.com/bluegolf/pgataqs26/event/pgataqs263/course/ccocala/detailedscorecard.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-white rounded-apple p-6 border border-gray-200 hover:shadow-apple transition-all max-w-md"
-              >
-                <div className="text-center">
-                  <div className="text-4xl mb-3">📊</div>
-                  <h5 className="font-semibold text-black mb-2">Official Scorecard</h5>
-                  <p className="text-sm text-gray-600 font-light">View detailed hole-by-hole scorecard on BlueGolf</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a
+                  href="https://pgataqs.bluegolf.com/bluegolf/pgataqs26/event/pgataqs263/course/ccocala/detailedscorecard.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-white rounded-apple p-6 border border-gray-200 hover:shadow-apple transition-all"
+                >
+                  <div className="text-center">
+                    <div className="text-4xl mb-3">📊</div>
+                    <h5 className="font-semibold text-black mb-2">Official Scorecard</h5>
+                    <p className="text-sm text-gray-600 font-light">View detailed hole-by-hole scorecard on BlueGolf</p>
+                  </div>
+                </a>
+                <div className="bg-white rounded-apple p-6 border border-gray-200">
+                  <div className="text-center mb-4">
+                    <div className="text-4xl mb-3">🗺️</div>
+                    <h5 className="font-semibold text-black mb-2">Course Images</h5>
+                    <p className="text-sm text-gray-600 font-light">Browse hole-by-hole course layouts</p>
+                  </div>
+                  <CourseImageGallery />
                 </div>
-              </a>
+              </div>
             </div>
 
             <div className="bg-gray-50 rounded-apple p-6 border border-gray-200">
