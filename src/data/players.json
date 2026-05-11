@@ -4,15 +4,15 @@
       "id": "player_001",
       "name": "Nolan Forsman",
       "handicap": 0,
-      "clippd_id": "",
-      "rounds_completed": 0
+      "clippd_id": "NF-2026-001",
+      "rounds_completed": 3
     },
     {
       "id": "player_002",
       "name": "Carson Klawonn",
       "handicap": 0,
-      "clippd_id": "",
-      "rounds_completed": 0
+      "clippd_id": "CK-2026-002",
+      "rounds_completed": 3
     }
   ]
 }

@@ -98,15 +98,6 @@ function extractRounds(consolidatedData: any): Round[] {
       const score = scorecardEntry?.score ?? holeData?.score ?? 0;
       const par = scorecardEntry?.par ?? holeData?.par ?? 4;
       
-      // Debug logging for missing scores
-      if (score === 0 && holeNum <= 3) {
-        console.log(`[Round ${roundData.round_number}] Hole ${holeNum}:`, {
-          scorecardEntry,
-          holeData: holeData ? { score: holeData.score, par: holeData.par } : null,
-          finalScore: score
-        });
-      }
-      
       completeHoles.push({
         hole_number: holeNum,
         par: par,
@@ -121,16 +112,6 @@ function extractRounds(consolidatedData: any): Round[] {
       });
     }
     
-    // Log summary for debugging
-    if (roundData.round_number === 1) {
-      console.log(`[Round ${roundData.round_number}] Extracted holes:`, {
-        totalHoles: completeHoles.length,
-        scores: completeHoles.map(h => h.score),
-        scorecardLength: roundData.scorecard?.length,
-        holesLength: holes.length
-      });
-    }
-
     return {
       player_id: consolidatedData.player_id,
       round_number: roundData.round_number,

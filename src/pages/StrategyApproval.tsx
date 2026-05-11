@@ -19,6 +19,7 @@ export default function StrategyApproval() {
   const [coachNotes, setCoachNotes] = useState('');
   const [filter, setFilter] = useState<'all' | 'pending' | 'approved'>('all');
   const [showSignOffModal, setShowSignOffModal] = useState(false);
+  const [showSuccessBanner, setShowSuccessBanner] = useState(false);
 
   // Generate strategy when player is selected and rounds are loaded
   useEffect(() => {
@@ -131,9 +132,8 @@ export default function StrategyApproval() {
     
     setStrategy(approvedStrategy);
     setShowSignOffModal(false);
-    
-    const playerName = players.find(p => p.id === selectedPlayerId)?.name;
-    alert(`Strategy approved and sent to ${playerName}!\n\nIn production, this would:\n- Save to database\n- Generate player-facing PDF\n- Send to player's mobile app`);
+    setShowSuccessBanner(true);
+    setTimeout(() => setShowSuccessBanner(false), 5000);
   };
 
   const getFilteredHoles = () => {
@@ -450,6 +450,20 @@ export default function StrategyApproval() {
           </div>
         )}
       </div>
+
+      {/* Success Banner */}
+      {showSuccessBanner && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 flex items-center space-x-3 bg-white border border-gray-200 rounded-apple shadow-apple-lg px-6 py-4 animate-fade-in">
+          <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-sm flex-shrink-0">✓</div>
+          <div>
+            <p className="text-sm font-semibold text-black">
+              Strategy sent to {players.find(p => p.id === selectedPlayerId)?.name}
+            </p>
+            <p className="text-xs text-gray-500 font-light mt-0.5">Player will receive their course plan shortly</p>
+          </div>
+          <button onClick={() => setShowSuccessBanner(false)} className="ml-4 text-gray-400 hover:text-gray-600 text-lg leading-none">×</button>
+        </div>
+      )}
 
       {/* Sign-Off Confirmation Modal */}
       {showSignOffModal && (

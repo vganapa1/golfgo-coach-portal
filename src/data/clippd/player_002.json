@@ -1,0 +1,152 @@
+{
+  "player_id": "player_002",
+  "player_name": "Carson Klawonn",
+  "rounds_analyzed": 18,
+  "last_updated": "2026-02-19",
+
+  "off_the_tee": {
+    "overall_shot_quality": 98,
+    "dna": [
+      { "category": "Par 4 0-350", "avg_shot_quality": 102 },
+      { "category": "Par 4 350-400", "avg_shot_quality": 99 },
+      { "category": "Par 4 400-450", "avg_shot_quality": 96 },
+      { "category": "Par 4 450+", "avg_shot_quality": 94 },
+      { "category": "Par 5 500-550", "avg_shot_quality": 100 },
+      { "category": "Par 5 550+", "avg_shot_quality": 97 }
+    ]
+  },
+
+  "approach": {
+    "overall": {
+      "shot_quality": 86,
+      "strokes_gained": -0.72,
+      "gir_pct": 65,
+      "accuracy_pct": 63,
+      "avg_proximity": "34'6\"",
+      "tour_t25_avg_proximity": "31'5\"",
+      "miss_tendency": {
+        "left_pct": 12,
+        "right_pct": 18,
+        "short_pct": 14,
+        "long_pct": 4
+      }
+    },
+    "shot_quality_zones_top3": [
+      { "range_yards": "100-120", "shot_quality": 94, "avg_proximity": "24'8\"" },
+      { "range_yards": "140-160", "shot_quality": 91, "avg_proximity": "29'3\"" },
+      { "range_yards": "180-200", "shot_quality": 88, "avg_proximity": "38'5\"" }
+    ],
+    "avoid_zone": {
+      "range_yards": "60-80",
+      "shot_quality": 79,
+      "avg_proximity": "27'2\""
+    },
+    "pin_location_heatmaps": [
+      {
+        "distance_range": "50-100 yds",
+        "values": {
+          "top_left": 72, "top_center": 85, "top_right": 88,
+          "middle_left": 96, "middle_center": 90, "middle_right": 74,
+          "bottom_left": 80, "bottom_center": 68, "bottom_right": 84
+        }
+      },
+      {
+        "distance_range": "100-140 yds",
+        "values": {
+          "top_left": 60, "top_center": 98, "top_right": 62,
+          "middle_left": 100, "middle_center": 66, "middle_right": 105,
+          "bottom_left": 88, "bottom_center": 118, "bottom_right": 84
+        }
+      },
+      {
+        "distance_range": "140-180 yds",
+        "values": {
+          "top_left": 78, "top_center": 90, "top_right": 75,
+          "middle_left": 85, "middle_center": 86, "middle_right": 82,
+          "bottom_left": 91, "bottom_center": 78, "bottom_right": 88
+        }
+      },
+      {
+        "distance_range": "180+ yds",
+        "values": {
+          "top_left": 84, "top_center": 88, "top_right": 90,
+          "middle_left": 58, "middle_center": 80, "middle_right": 114,
+          "bottom_left": 66, "bottom_center": 92, "bottom_right": 86
+        }
+      }
+    ]
+  },
+
+  "around_the_green": {
+    "player_quality": 94,
+    "tour_top_25": 111,
+    "importance_to_scoring_pct": 18,
+    "work_on": {
+      "category": "ARG Sand",
+      "importance_pct": 10,
+      "opportunity": "High",
+      "sq_trend": 85
+    },
+    "breakdown": {
+      "from_fairway": { "up_and_down_pct": 52, "strokes_gained": -0.18 },
+      "from_rough":   { "up_and_down_pct": 48, "strokes_gained": -0.05 },
+      "from_sand":    { "up_and_down_pct": 38, "strokes_gained": -0.22 }
+    }
+  },
+
+  "putting": {
+    "overall": {
+      "player_quality": 103,
+      "tour_top_25": 104,
+      "strokes_gained": 0.12,
+      "shot_quality": 102,
+      "importance_to_scoring_pct": 28,
+      "birdie_conversion_pct": 32,
+      "tour_t25_birdie_conversion_pct": 30,
+      "one_putt_pct": 41,
+      "three_putt_pct": 4,
+      "putts_per_round": 29.4,
+      "putts_per_gir": 1.80,
+      "avg_putts_made_distance": "71'4\"",
+      "total_putts": 424,
+      "one_putts": 98,
+      "two_putts": 156,
+      "three_putts": 12,
+      "putts_made_distance": "58'3\"",
+      "tour_t25_putts_made_distance": "78'9\""
+    },
+    "work_on": {
+      "focus_area": "PUTT 8-15 ft",
+      "importance_pct": 9,
+      "opportunity": "High",
+      "sq_trend": 88,
+      "trending": "up"
+    },
+    "profiles": [
+      {
+        "distance_range": "3-8 ft",
+        "rounds_analyzed": 5,
+        "speed_control": "Neutral",
+        "straight_putts": "No Bias",
+        "l_to_r_putts": "Left Bias",
+        "r_to_l_putts": "No Bias"
+      },
+      {
+        "distance_range": "8-15 ft",
+        "rounds_analyzed": 5,
+        "speed_control": "Neutral",
+        "straight_putts": "Right Bias",
+        "l_to_r_putts": "Left Bias",
+        "r_to_l_putts": "Right Bias"
+      },
+      {
+        "distance_range": "15-35 ft",
+        "rounds_analyzed": 5,
+        "speed_control": "Aggressive",
+        "straight_putts": "No Bias",
+        "l_to_r_putts": "No Bias",
+        "r_to_l_putts": "Left Bias"
+      }
+    ]
+  }
+}
