@@ -18,10 +18,10 @@ function App() {
             <Route path="/" element={<StrategyApproval />} />
             <Route path="/player/:playerId" element={<PlayerDetail />} />
             <Route path="/round-defense" element={<RoundDefense />} />
-            <Route path="/tournaments" element={<div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><Tournaments /></div>} />
+            <Route path="/tournaments" element={<div className="h-full overflow-y-auto"><div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><Tournaments /></div></div>} />
             <Route path="/create-strategy/:playerId" element={<CreateStrategy />} />
-            <Route path="/faq" element={<div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><FAQ /></div>} />
-            <Route path="/settings" element={<div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><Settings /></div>} />
+            <Route path="/faq" element={<div className="h-full overflow-y-auto"><div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><FAQ /></div></div>} />
+            <Route path="/settings" element={<div className="h-full overflow-y-auto"><div className="w-full max-w-[2000px] mx-auto px-6 lg:px-8 xl:px-12 py-8"><Settings /></div></div>} />
           </Routes>
         </main>
       </div>
